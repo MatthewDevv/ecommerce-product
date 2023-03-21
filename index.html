@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sneakers - obuwie skórzane</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <button class="burger">
+        <img src="images/icon-menu.svg" alt="Przycisk menu" />
+      </button>
+      <div class="brand"><img src="images/logo.svg" alt="sneakers logo" /></div>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="#" class="nav-link">Kolekcja</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Kobiety</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Mężczyżni</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">O nas</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Kontakt</a></li>
+      </ul>
+      <div class="body-overlay"></div>
+      <div class="cart-avatar-container">
+        <button class="cart">
+          <img src="images/icon-cart.svg" id="cartIcon" alt="cart icon" />
+        </button>
+        <img class="avatar" src="images/image-avatar.png" alt="" />
+        <div class="cart-collapse">
+          <h4>Koszyk</h4>
+          <hr />
+          <div class="products-cart-summary">
+            <p class="empty-cart">Twój koszyk jest pusty.</p>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section class="lightbox" aria-label="Product photos">
+        <div>
+          <img
+            class="product-big-photo"
+            src="images/image-product-1.jpg"
+            alt=""
+          />
+        </div>
+        <div class="product-thumbnails">
+          <img
+            class="active"
+            src="images/image-product-1-thumbnail.jpg"
+            alt=""
+          />
+          <img src="images/image-product-2-thumbnail.jpg" alt="" />
+          <img src="images/image-product-3-thumbnail.jpg" alt="" />
+          <img src="images/image-product-4-thumbnail.jpg" alt="" />
+        </div>
+      </section>
+      <section class="carousel-section" aria-label="Product photos">
+        <div class="carousel">
+          <button class="lightbox-close">
+            <img src="images/icon-close.svg" alt="Close" />
+          </button>
+          <button class="carousel-btn prev" data-carousel-btn="prev">
+            <img src="images/icon-previous.svg" alt="Previous image icon" />
+          </button>
+          <button class="carousel-btn next" data-carousel-btn="next">
+            <img src="images/icon-next.svg" alt="Next image icon" />
+          </button>
+          <ul class="slides">
+            <li class="slide active">
+              <img src="images/image-product-1.jpg" alt="Zdjęcie produktu #1" />
+            </li>
+            <li class="slide">
+              <img src="images/image-product-2.jpg" alt="Zdjęcie produktu #1" />
+            </li>
+            <li class="slide">
+              <img src="images/image-product-3.jpg" alt="Zdjęcie produktu #1" />
+            </li>
+            <li class="slide">
+              <img src="images/image-product-4.jpg" alt="Zdjęcie produktu #1" />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="product-info">
+        <h5>Sneaker Company</h5>
+        <h2 id="product-name">Trampki Skórzane Rocky</h2>
+        <p>
+          Te niskoprofilowe trampki są Twoim idealnym towarzyszem do noszenia na
+          co dzień. Wyposażone w trwałą, gumową podeszwę zewnętrzną, wytrzymają
+          wszystko. wszystko, co może zaoferować pogoda.
+        </p>
+        <div class="product-price-container">
+          <div>
+            <h2><span id="product-actual-price">125.00</span> PLN</h2>
+            <span id="product-discount-amount">50%</span>
+          </div>
+          <span id="product-last-price">250.00 PLN</span>
+        </div>
+        <div class="product-btns">
+          <div class="product-quantity-btns">
+            <button class="remove_product">
+              <img src="images/icon-minus.svg" alt="Remove product icon" />
+            </button>
+            <span class="quantity"></span>
+            <button class="add_product">
+              <img src="images/icon-plus.svg" alt="Add product icon" />
+            </button>
+          </div>
+          <button class="add-to-basket-btn">
+            <img src="images/icon-cart.svg" alt="Cart icon" />
+            Dodaj do koszyka
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
